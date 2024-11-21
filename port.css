@@ -64,12 +64,12 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 6vw; /* زيادة المسافة بين الأيقونات */
-    justify-items: center;
+   
 }
 
 .skills-icons img {
-    width: 12vw;  /* تصغير الأيقونات */
-    height: 12vw; /* تصغير الأيقونات */
+    width: 6vw;  /* تصغير الأيقونات */
+    height: 6vw; /* تصغير الأيقونات */
 }
 
 .skill-item p {
