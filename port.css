@@ -63,7 +63,7 @@ body {
 .skills-icons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12vw; /* زيادة المسافة بين الأيقونات */
+    gap: 6vw; /* زيادة المسافة بين الأيقونات */
     justify-items: center;
 }
 
