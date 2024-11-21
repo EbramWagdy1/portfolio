@@ -8,201 +8,105 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    padding: 30px;
+    padding: 3vw;
 }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 70px;
-    max-width: 1200px;
-    padding: 20px;
+    gap: 5vw;
+    max-width: 90%;
+    padding: 2vw;
     height: 100vh;
 }
 
 .text-section {
-    max-width: 1200px;
+    max-width: 80%;
     text-align: left;
 }
 
 .text-section h1 {
-    font-size: 3.5em;
+    font-size: 5vw;
     font-weight: bold;
 }
 
 .text-section p {
-    font-size: 1.5em;
+    font-size: 2vw;
     font-style: italic;
 }
 
 .profile-image {
-    width: 500px;
-    height: 500px;
+    width: 25vw;
+    height: 25vw;
     border-radius: 25px;
     overflow: hidden;
 }
 
 .profile-image img {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .skills-section {
-    margin-top: 500px;
+    margin-top: 10vw;
     text-align: left;
     width: 100%;
 }
 
 .skills-section h1 {
-    margin-bottom: 20px;
-    font-size: 3em;
+    margin-bottom: 2vw;
+    font-size: 4vw;
 }
 
 .skills-icons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 220px;
-    justify-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12vw; /* زيادة المسافة بين الأيقونات */
+    justify-items: center;
 }
 
 .skills-icons img {
-    width: 250px;
-    height: 250px;
-}
-
-
-@media (max-width: 1200px) {
-    .skills-icons {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 100px;
-    }
-
-    .skills-icons img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-    }
-
-    .profile-image {
-        width: 400px;
-        height: 400px;
-    }
-
-    .text-section h1 {
-        font-size: 3em;
-    }
-
-    .text-section p {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 900px) {
-    .skills-icons {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
-    }
-
-    .skills-icons img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-image {
-        width: 300px;
-        height: 300px;
-    }
-
-    .text-section h1 {
-        font-size: 2.5em;
-    }
-
-    .text-section p {
-        font-size: 1.1em;
-    }
-}
-
-@media (max-width: 600px) {
-    .skills-icons {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .skills-icons img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-image {
-        width: 250px;
-        height: 250px;
-    }
-
-    .text-section h1 {
-        font-size: 2em;
-    }
-
-    .text-section p {
-        font-size: 1em;
-    }
-
-    .skills-section h1 {
-        font-size: 2.5em;
-    }
+    width: 12vw;  /* تصغير الأيقونات */
+    height: 12vw; /* تصغير الأيقونات */
 }
 
 .skill-item p {
-    margin-top: 10px;
-    font-size: 1.5em;
+    margin-top: 1vw;
+    font-size: 2vw;
 }
 
 .about-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 70px;
-    max-width: 1200px;
-    padding: 20px;
+    gap: 5vw;
+    max-width: 90%;
+    padding: 2vw;
     height: 100vh;
 }
 
 .about-section img {
-    width: 500px;
-    height: 500px;
+    width: 25vw;
+    height: 25vw;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .about-text {
-    max-width: 2500px;
+    max-width: 80%;
     text-align: left;
 }
 
 .about-text h1 {
-    font-size: 2.5em;
+    font-size: 4vw;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
 }
 
 .about-text p {
-    font-size: 1.2em;
+    font-size: 1.5vw;
     line-height: 1.5;
 }
 
@@ -210,19 +114,19 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    padding-left: 30px;
-    margin-top: 50px;
+    padding-left: 2vw;
+    margin-top: 5vw;
 }
 
 .expertise-title {
-    font-size: 3em;
+    font-size: 3vw;
     font-weight: bold;
-    margin-right: 30px;
+    margin-right: 2vw;
     flex-shrink: 0;
 }
 
 .expertise-text {
-    font-size: 2em;
+    font-size: 2vw;
     text-align: center;
     line-height: 2;
     flex-grow: 1;
@@ -234,37 +138,37 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 20px;
-    margin-top: 50px;
+    padding: 2vw;
+    margin-top: 5vw;
     width: 100%;
     background-color: #000;
     overflow: hidden;
 }
 
 .contact-container p {
-    font-size: 3em;
+    font-size: 2vw;
     color: white;
-    margin-right: 30px;
+    margin-right: 2vw;
     z-index: 1; 
 }
 
 .social-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 2vw;
     z-index: 1; 
 }
 
 .social-links li a img {
-    width: 40px;
-    height: 40px;
+    width: 4vw;
+    height: 4vw;
     filter: invert(1);
 }
 
 .top-line, .bottom-line {
     position: absolute;
     width: 100%;
-    height: 3px;
+    height: 0.3vw;
     background: linear-gradient(to left, #FF66C4, #FFDE59);
 }
 
