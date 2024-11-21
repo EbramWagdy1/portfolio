@@ -50,7 +50,7 @@ body {
 }
 
 .skills-section {
-    margin-top:500px;
+    margin-top: 500px;
     text-align: left;
     width: 100%;
 }
@@ -70,6 +70,102 @@ body {
 .skills-icons img {
     width: 250px;
     height: 250px;
+}
+
+
+@media (max-width: 1200px) {
+    .skills-icons {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 100px;
+    }
+
+    .skills-icons img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .profile-image {
+        width: 400px;
+        height: 400px;
+    }
+
+    .text-section h1 {
+        font-size: 3em;
+    }
+
+    .text-section p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 900px) {
+    .skills-icons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .skills-icons img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .text-section h1 {
+        font-size: 2.5em;
+    }
+
+    .text-section p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-icons {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skills-icons img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .text-section h1 {
+        font-size: 2em;
+    }
+
+    .text-section p {
+        font-size: 1em;
+    }
+
+    .skills-section h1 {
+        font-size: 2.5em;
+    }
 }
 
 .skill-item p {
