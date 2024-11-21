@@ -63,7 +63,7 @@ body {
 .skills-icons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 200px;
+    gap: 220px;
     justify-items: start;
 }
 
